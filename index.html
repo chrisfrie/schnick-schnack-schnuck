@@ -29,9 +29,12 @@
         <div class="small-6 columns">
           <h1 class="text-center">You</h1>
           <div class="cards">
-            <div class="card1">rock</div>
-            <div class="card2">scissor</div>
-            <div class="card3">paper</div>
+            <div class="card1" @click="choiceCard('rock')">rock</div>
+            <div class="card2" @click="choiceCard('scissor')">scissor</div>
+            <div class="card3" @click="choiceCard('paper')">paper</div>
+          </div>
+          <div>
+            <p>It´s your turn. Click on your choice.</p>
           </div>
           <div
             class="progressbar"
