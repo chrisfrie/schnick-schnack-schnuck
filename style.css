@@ -1,0 +1,179 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #fefefe;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  max-width: 62.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row:after,
+.row:before {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.row.collapse > .column,
+.row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row .row {
+  max-width: none;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+.row .row.collapse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.expanded {
+  max-width: none;
+}
+.row.expanded .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+  float: right;
+}
+.column.end:last-child:last-child,
+.end.columns:last-child:last-child {
+  float: left;
+}
+
+.column.row.row,
+.row.row.columns {
+  float: none;
+}
+.row .column.row.row,
+.row .row.row.columns {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.healthbar {
+  width: 80%;
+  height: 40px;
+  background-color: #eee;
+  margin: auto;
+  transition: width 500ms;
+}
+
+.controls,
+.log {
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 6px #ccc;
+}
+
+.turn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.log ul {
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.log ul li {
+  margin: 5px;
+}
+
+.log ul .player-turn {
+  color: blue;
+  background-color: #e4e8ff;
+}
+
+.log ul .monster-turn {
+  color: red;
+  background-color: #ffc0c1;
+}
+
+#heal {
+  background-color: #aaffb0;
+}
+
+.small-6 {
+  width: 50%;
+}
+
+.small-12 {
+  width: 100%;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 32%;
+  margin-right: 2%;
+  padding: 20px;
+  background: red;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
