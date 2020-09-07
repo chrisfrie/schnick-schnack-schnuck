@@ -11,7 +11,24 @@ new Vue({
             this.playerPoints = 0;
             this.brunoPoints = 0;
         },
-
+        checkWin: function(){
+            if(this.playerPoints >= 3){
+                if(confirm('You wone! New game?')){
+                    this.startGame();
+                } else {
+                    this.gameIsRunning = false;
+                }
+                return true;
+            } else if(this.brunoPoints >= 3){
+                if(confirm('You lost! New game?')){
+                    this.startGame();
+                } else {
+                    this.gameIsRunning = false;
+                }
+                return true;
+            }
+            return false;
+        },
         calculateWinnerPoints: function() {
             if(playerChoice == 'rock' && brunoChoice == 'rock'){
                 this.playerPoints += 0;
