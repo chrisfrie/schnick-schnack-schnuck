@@ -1,11 +1,27 @@
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 html {
+  font-size: 100%;
+  box-sizing: border-box;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  padding: 0;
   margin: 0;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #fefefe;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 section {
@@ -17,25 +33,13 @@ h1 {
   margin: 0.67em 0;
 }
 
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-}
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #eee;
+  padding: 12px;
+  box-shadow: 0 1px 1px black;
 }
 
 .row {
@@ -172,6 +176,8 @@ body {
   padding: 20px;
   background: red;
   text-align: center;
+  font-size: 20px;
+  box-shadow: 0 1px 1px black;
 }
 
 .cards {
