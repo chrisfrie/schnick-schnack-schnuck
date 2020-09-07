@@ -33,14 +33,26 @@
             <div class="card2">scissor</div>
             <div class="card3">paper</div>
           </div>
-          <div class="progressbar"></div>
+          <div
+            class="progressbar"
+            style="background-color: green; margin: 0; color: red"
+            :style="{width: playerPoints + '%'}"
+          >
+            {{ playerPoints }}
+          </div>
         </div>
         <div class="small-6 columns">
           <h1 class="text-center">Bruno</h1>
           <div class="cards">
             <div class="card4">rock</div>
           </div>
-          <div class="progressbar"></div>
+          <div
+            class="progressbar"
+            style="background-color: green; margin: 0; color: red"
+            :style="{width: brunoPoints + '%'}"
+          >
+            {{ brunoPoints }}
+          </div>
         </div>
       </section>
       <section class="row log">
