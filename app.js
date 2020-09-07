@@ -6,11 +6,12 @@ new Vue({
         gameIsRunning: false,
     },
     methods: {
-        startGame: function() {
+        startGame: function(){
             this.gameIsRunning = true;
             this.playerPoints = 0;
             this.brunoPoints = 0;
         },
+
         calculateWinnerPoints: function() {
             if(playerChoice == 'rock' && brunoChoice == 'rock'){
                 this.playerPoints += 0;
