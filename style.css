@@ -106,11 +106,12 @@ body {
   text-align: center;
 }
 
-.healthbar {
+.progressbar {
   width: 80%;
   height: 40px;
   background-color: #eee;
   margin: auto;
+  padding-top: 20px;
   transition: width 500ms;
 }
 
@@ -140,12 +141,12 @@ body {
   margin: 5px;
 }
 
-.log ul .player-turn {
+.log ul .you-turn {
   color: blue;
   background-color: #e4e8ff;
 }
 
-.log ul .monster-turn {
+.log ul .bruno-turn {
   color: red;
   background-color: #ffc0c1;
 }
@@ -176,4 +177,10 @@ body {
 .cards {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card3,
+.card4 {
+  margin-right: 0%;
 }
