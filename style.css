@@ -155,10 +155,6 @@ button {
   background-color: #ffc0c1;
 }
 
-#heal {
-  background-color: #aaffb0;
-}
-
 .small-6 {
   width: 50%;
 }
@@ -188,10 +184,21 @@ button {
   background: red;
 }
 
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  background: lightcoral;
+}
+
 .card4,
 .card5,
 .card6 {
   background: blue;
+}
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  background: lightskyblue;
 }
 
 .cards {
