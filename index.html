@@ -20,12 +20,12 @@
           </p>
         </div>
       </section>
-      <section class="row">
+      <section class="row" v-if="!gameIsRunning">
         <div class="small-12 columns">
-          <button id="start-game" class="text-center">START NEW GAME</button>
+          <button id="start-game" @click="startGame">START NEW GAME</button>
         </div>
       </section>
-      <section class="row">
+      <section class="row" v-else>
         <div class="small-6 columns">
           <h1 class="text-center">You</h1>
           <div class="cards">
